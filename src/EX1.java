@@ -15,7 +15,4 @@ public class EX1 {
         }
         System.out.println(min);
     }
-    public static int(int arr[],int a){
-
-    }
 }
