@@ -1,18 +1,24 @@
 import java.util.Scanner;
 public class EX1 {
     public void sol(){
+        System.out.println("Write number of elements and elements\n For example 5\n 1 2 4 5 6");
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
         int[] arr= new int[a];
         for (int x=0;x<a;x++){
             arr[x]=sc.nextInt();
         }
-        int min=arr[0];
-        for(int i=0;i<a;i++){
-            if (arr[i]<=min) {
-                min=arr[i];
-            }
+        System.out.println(FindMin(arr,a));
         }
-        System.out.println(min);
+
+    public static int FindMin(int[] arr,int n){
+        int min;
+        if(n==1){
+            return arr[0];
+        }
+        else{
+            min=FindMin(arr,n-1);
+        }
+        return Math.min(arr[n-1],min);
     }
 }
