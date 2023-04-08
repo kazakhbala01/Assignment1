@@ -1,13 +1,17 @@
 import java.util.Scanner;
 public class EX6 {
     public void sol(){
+        System.out.println("Power of number:");
     Scanner sc=new Scanner(System.in);
     int a=sc.nextInt();
     int n=sc.nextInt();
-    int res=a;
-    for(int i=1;i<n;i++) {
-            res=res*a;
+    System.out.println(PowerOfNumber(a,n));
     }
-    System.out.println(res);
+    public static int PowerOfNumber(int a,int n){
+        if(n==1){
+            return a;
+        }else{
+            return PowerOfNumber(a,n-1)*a;
+        }
     }
 }

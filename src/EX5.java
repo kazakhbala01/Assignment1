@@ -1,15 +1,16 @@
 import java.util.Scanner;
 public class EX5 {
     public void sol(){
+        System.out.println("Fibonacci sequence:");
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        int n1=0,n2=1;
-        int res=0;
-        for(int i=0;i<n;i++){
-            res=n1+n2;
-            n2=n1;
-            n1=res;
+        System.out.println(FindFibonacciNumber(n));
+    }
+    public static int FindFibonacciNumber(int n){
+        if(n==1||n==0){
+            return n;
+        }else{
+            return FindFibonacciNumber(n-1)+FindFibonacciNumber(n-2);
         }
-        System.out.println(res);
     }
     }
