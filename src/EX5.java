@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class EX5 {
 
 
-    public void sol(){
+    public static void sol(){
         System.out.println("Fibonacci sequence:");
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();

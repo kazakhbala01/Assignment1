@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class EX6 {
 
-    public void sol(){
+    public static void sol(){
         System.out.println("Power of number:");
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();

@@ -8,7 +8,7 @@
 import java.util.Scanner;
 
 public class EX9 {
-    public void sol() {
+    public static void sol() {
         System.out.println("Binomial Coefficient");
         Scanner sc = new Scanner(System.in);
         int k = sc.nextInt();//first number(K)
@@ -16,7 +16,7 @@ public class EX9 {
         System.out.println(binomCoef(k,n));//print output of binomCoef function
     }
 
-    public int binomCoef(int n, int k) {
+    public static int binomCoef(int n, int k) {
         if (k == 0 || k == n) {
             return 1;
         } else {

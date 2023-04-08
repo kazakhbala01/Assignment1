@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class EX2 {
 
-    public void sol() {
+    public static void sol() {
         System.out.println("Average:");
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();

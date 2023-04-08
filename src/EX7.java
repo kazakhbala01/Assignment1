@@ -8,7 +8,7 @@
 import java.util.Scanner;
 
 public class EX7 {
-    public void sol() {
+    public static void sol() {
         System.out.println("reverse array:");
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();//number of elements
@@ -19,7 +19,7 @@ public class EX7 {
         reverseArr(arr,a);
         //print output of reverseArray function
     }
-    public void reverseArr(int[] arr,int a){
+    public static void reverseArr(int[] arr, int a){
         if(a==1){
             System.out.print(" ");
         }else{

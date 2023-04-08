@@ -8,7 +8,7 @@
 import java.util.Scanner;
 
 public class EX3 {
-    public void sol() {
+    public static void sol() {
         System.out.println("Prime or Composite:");
         Scanner sc = new Scanner(System.in);
         int n=sc.nextInt();
