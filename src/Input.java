@@ -7,6 +7,8 @@ public class Input {
     EX5 ex5=new EX5();
     EX6 ex6=new EX6();
     EX7 ex7=new EX7();
+    EX10 ex10=new EX10();
+    EX9 ex9=new EX9();
     //EX8 ex8=new EX8();
 
 
@@ -32,6 +34,15 @@ public class Input {
                break;
            case 6:
                ex6.sol();
+               break;
+           case 7:
+               ex7.sol();
+               break;
+           case 10:
+               ex10.sol();
+               break;
+           case 9:
+               ex9.sol();
                break;
        }
     }
