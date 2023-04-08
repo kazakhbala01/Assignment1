@@ -6,6 +6,7 @@ Brief description of your project.
 
 ## Usage
 
+```java
 public static int FindMin(int[] arr,int n){//solution was made by recursion method Last In First Out
         int min;
         if(n==1){
