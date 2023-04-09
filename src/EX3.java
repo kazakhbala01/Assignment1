@@ -4,7 +4,9 @@
  * decreased until it reaches 1, to check whether n is divisible by any number other than 1 and itself.
  * The function returns True if n is prime and False otherwise.
  * @param n is given number to check prime or not
+ * @return true or false
  */
+
 import java.util.Scanner;
 
 public class EX3 {

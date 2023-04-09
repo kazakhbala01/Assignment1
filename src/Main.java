@@ -14,8 +14,9 @@ public class Main {
             case 5 -> EX5.sol();
             case 6 -> EX6.sol();
             case 7 -> EX7.sol();
-            case 10 -> EX10.sol();
+            case 8 -> EX8.sol();
             case 9 -> EX9.sol();
+            case 10 -> EX10.sol();
             }
     }
 }

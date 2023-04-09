@@ -23,15 +23,18 @@ public class EX2 {
 
 
     public static double findAverageOfArray(int[] arr,int n){
+        //return sumOfArray divided by number of elements
         return sumOfArray(arr,n)/n;
     }
 
     public static double sumOfArray(int[] arr,int n){
         double averg;
         if(n==1){
+            //if n equals to one return first array, then recursion ends
             return arr[0];
         }
         else{
+            //calls recursive function again with n decreased by one
             averg=sumOfArray(arr,n-1);
         }return averg+arr[n-1];
     }

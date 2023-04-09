@@ -23,6 +23,7 @@ public class EX10 {
         } else if(a==1){
             return 1;
         } else {
+            //else return function with(second number, remainder of first and second number)
             return findGcdOfNumber(n, a % n);
         }
     }
