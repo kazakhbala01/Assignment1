@@ -267,22 +267,23 @@ whether “s” is all consists of digits
 
 ## Explanation
 
-First I ask user to input number to show nth element of fibonacci sequence. Then FindFibonacciNumber function will call 2 another FindFibonacciNumber function again and again with (n) decreased by one and then by two, then returns sum of recursive functions.
+The CheckDigit() method takes a string as input and checks if it contains only digits. It uses recursion to check each character in the string. If the string is empty, it returns true. If the first character is not a digit, it returns false. Otherwise, it recursively calls itself with the substring starting from the second character.
 
 ## Solution
 
 ```java
- public static int FindFibonacciNumber(int n){
-        // If n equals 0 or 1, return n.
-        if(n==1||n==0){
-            return n;
-        }else{
-            // Else, return the sum of the recursive function FindFibonacciNumber(n-1) 
-            // and the recursive function FindFibonacciNumber(n-2).
-            return FindFibonacciNumber(n-1)+FindFibonacciNumber(n-2);
+public static boolean CheckDigit(String s) {
+            if (s.length() == 0) {
+                //an empty string is considered to have only digits
+                return true;
+            } else if (!Character.isDigit(s.charAt(0))) {
+                // if the first character is not a digit, return false
+                return false;
+            } else {
+                // else, recursively call the function with the substring starting from the second character
+                return CheckDigit(s.substring(1));
+            }
         }
-    }
-}
 ```
 # Exercise 9
 
@@ -326,8 +327,7 @@ GCD(a, b) using recursion and by using Euclidean Algorithm
 
 ## Explanation
 
-First I ask user to input number a and input number b. Then findGcdOfNumber returns new method with n and a%n(remainder) parameters and if n equals to zero it returns a(that is GCD) and else if a equals to 1, it means that there greatest common divisor equals to 1.
-
+The function uses recursion to compute the GCD of the two integers. The function is based on the Euclidean algorithm for finding the GCD of two integers. In each recursive call, the function replaces the two input integers with the second integer and the remainder of the first integer divided by the second integer. This process continues until the second integer is zero. The GCD is the last non-zero remainder that was computed.
 ## Solution
 
 ```java
